@@ -10,7 +10,7 @@ function Teacher() {
   const handleSubmit = () => {
     // e.preventDefault();
     axios
-      .post("http://localhost:5000/teacher", { name, emp_id })
+      .post("https://login-school-web.onrender.com/teacher", { name, emp_id })
 
       .then((result) => {
         console.log(result);
@@ -19,7 +19,7 @@ function Teacher() {
   };
   useEffect(() => {
     axios
-      .get("http://localhost:5000/teacher")
+      .get("https://login-school-web.onrender.com/teacher")
       .then((users) => setUsers(users.data))
       .catch((err) => console.log(err));
   }, []);

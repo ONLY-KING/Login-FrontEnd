@@ -12,7 +12,7 @@ function Signup() {
     // alert("hi");
 
     axios
-      .post("http://localhost:5000/", { name, email, password })
+      .post("https://login-school-web.onrender.com/", { name, email, password })
 
       .then((result) => {
         // alert("hellp");
